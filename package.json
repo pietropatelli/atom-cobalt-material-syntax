@@ -2,7 +2,7 @@
   "name": "atom-cobalt-material-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A dark blue syntax theme inspired by the classic Cobalt and the Material theme",
+  "description": "A dark blue syntax theme inspired by the classic Cobalt and Material themes",
   "keywords": [
     "syntax",
     "theme",
@@ -11,7 +11,7 @@
     "cobalt",
     "blue"
   ],
-  "repository": "https://github.com/atom/atom-cobalt-material-syntax",
+  "repository": "https://github.com/PietroPate/atom-cobalt-material-syntax",
   "readme": "\n A dark theme inspired by the classic Cobalt theme and Silvestre Herrera's [Atom Material Syntax](https://github.com/silvestreh/atom-material-syntax).\n",
   "license": "MIT",
   "engines": {
