@@ -1,0 +1,67 @@
+.syntax--js {
+    &.syntax--constant {
+        color: @syntax-text-color;
+    }
+
+    &.syntax--support {
+        &.syntax--variable {
+            &.syntax--property {
+                color: @syntax-text-color;
+            }
+            &.syntax--property.syntax--dom {
+                color: @blue;
+            }
+        }
+    }
+
+    &.syntax--entity {
+        &.syntax--name {
+            &.syntax--type {
+                color: @orange;
+            }
+        }
+    }
+
+    &.syntax--variable {
+        &.syntax--property {
+            color: @blue;
+        }
+        &.syntax--other.syntax--object {
+            color: @syntax-text-color;
+        }
+        &.syntax--other.syntax--object.syntax--property {
+            color: @blue;
+        }
+    }
+
+    &.syntax--string.syntax--quoted.syntax--template {
+      .syntax--other.syntax--object.syntax--property {
+          color: @syntax-text-color;
+      }
+    }
+
+    &.syntax--constant {
+        &.syntax--numeric {
+            color: @syntax-numeric;
+        }
+
+        &.syntax--boolean {
+            color: @syntax-boolean;
+        }
+    }
+
+    &.syntax--punctuation.syntax--begin,
+    &.syntax--punctuation.syntax--end,
+    &.syntax--delimiter.syntax--object.syntax--comma,
+    &.syntax--brace.syntax--curly {
+        color: @syntax-brackets;
+
+        .syntax--comment & {
+            color: @syntax-comment-color;
+        }
+    }
+
+    &.syntax--export .syntax--variable.syntax--default {
+        color: @syntax-keyword;
+    }
+}

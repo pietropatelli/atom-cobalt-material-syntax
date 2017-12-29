@@ -1,0 +1,19 @@
+.syntax--php {
+    &.syntax--keyword {
+        &.syntax--operator {
+            &.syntax--assignment {
+                color: @syntax-keyword;
+            }
+        }
+    }
+
+    &.syntax--meta {
+        &.syntax--object {
+            color: @syntax-function;
+        }
+
+        &.syntax--arguments {
+            color: @syntax-keyword;
+        }
+    }
+}

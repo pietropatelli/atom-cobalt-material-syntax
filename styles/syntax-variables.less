@@ -1,0 +1,43 @@
+@import "colors";
+// General colors
+@syntax-text-color: @very-light-gray;
+@syntax-cursor-color: @cobalt-light-blue;
+@syntax-selection-color: lighten(@syntax-background-color, 10%);
+@syntax-background-color: @cobalt-blue;
+@syntax-comment-color: @cobalt-light-blue;
+// Guide colors
+@syntax-wrap-guide-color: @syntax-comment-color;
+@syntax-indent-guide-color: lighten(@syntax-background-color, 2.5%);
+@syntax-invisible-character-color: @syntax-comment-color;
+@syntax-bracket-matching: @syntax-cursor-color;
+// For find and replace markers
+@syntax-result-marker-color: @syntax-text-color;
+@syntax-result-marker-color-selected: white;
+// Gutter colors
+@syntax-gutter-text-color: fade(@syntax-text-color, 20%);
+@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
+@syntax-gutter-background-color: @syntax-background-color;
+@syntax-gutter-background-color-selected: darken(@syntax-background-color, 5%);
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed: @blue;
+@syntax-color-added: @green;
+@syntax-color-modified: @orange;
+@syntax-color-removed: @red;
+// Main syntax colors:
+@syntax-variable: @syntax-text-color;
+@syntax-function: @blue;
+@syntax-keyword: @purple;
+@syntax-operator: @cyan;
+@syntax-constant: @red;
+@syntax-string: @green;
+@syntax-numeric: @strong-orange;
+@syntax-punctuation: @cyan;
+// Other syntax colors:
+@syntax-classtype: @orange;
+@syntax-brackets: @syntax-punctuation;
+@syntax-interpolation: @lime;
+@syntax-escape: @lime;
+@syntax-todo-note: @dark-red;
+@syntax-boolean: @syntax-constant;
+@syntax-bold: @red;
+@syntax-italic: @purple;

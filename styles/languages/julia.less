@@ -1,0 +1,14 @@
+.syntax--julia {
+    .syntax--keyword {
+      color: @syntax-keyword;
+        &.syntax--operator {
+          color: @syntax-operator;
+            &.syntax--relation, &.syntax--logical {
+            color: @syntax-keyword;
+            }
+        }
+        &.syntax--other {
+          color: @syntax-function;
+        }
+    }
+}

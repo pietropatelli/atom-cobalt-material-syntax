@@ -1,0 +1,48 @@
+.syntax--latex {
+  .syntax--entity {
+      &.syntax--name {
+        font-weight: bold;
+        color: @syntax-bold; //@syntax-text-color;
+          &.syntax--function {
+              color: @syntax-function;
+          }
+          &.syntax--type {
+              color: @syntax-text-color;
+          }
+      }
+    }
+  .syntax--constant {  // CONSTANTS:
+      color: @syntax-function;
+      &.syntax--character {
+        color: @red; //@syntax-function;
+      }
+  }
+  .syntax--meta {
+      color: @syntax-text-color;
+  }
+  .syntax--string {
+      color: @syntax-string;
+      &.syntax--other.syntax--math {
+          color: @syntax-text-color;
+      }
+  }
+  .syntax--variable {
+    &.syntax--parameter.syntax--function {
+      color: @syntax-keyword;
+    }
+  }
+  .syntax--support {
+      &.syntax--class {
+          color: @syntax-classtype;
+      }
+      &.syntax--function {
+          color: @syntax-function;
+      }
+      &.syntax--type {
+          color: @syntax-keyword;
+      }
+      &.syntax--variable {
+          color: @syntax-classtype;
+      }
+  }
+}

@@ -1,0 +1,37 @@
+.syntax--markup { // MARKUP FAMILY
+    &.syntax--bold {
+        color: @syntax-bold;
+        font-weight: bold;
+    }
+    &.syntax--changed {
+        color: @purple;
+    }
+    &.syntax--deleted {
+        color: @red;
+    }
+    &.syntax--italic {
+        color: @syntax-italic;
+        font-style: italic;
+    }
+    &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+        color: @syntax-punctuation;
+    }
+    &.syntax--inserted {
+        color: @green;
+    }
+    &.syntax--list {
+        color: @light-orange;
+    }
+    &.syntax--quote {
+        color: @orange;
+    }
+    &.syntax--raw.syntax--inline {
+        color: @green;
+    }
+}
+.syntax--source.syntax--gfm .syntax--markup {
+    -webkit-font-smoothing: auto;
+    &.syntax--heading {
+        color: @green;
+    }
+}
