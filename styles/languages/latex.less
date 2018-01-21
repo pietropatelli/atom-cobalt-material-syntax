@@ -10,11 +10,18 @@
               color: @syntax-text-color;
           }
       }
+      &.syntax--name.syntax--section {
+          color: @red; //lighten(@syntax-comment-color,10%);
+          font-weight: bold;
+      }
     }
   .syntax--constant {  // CONSTANTS:
       color: @syntax-function;
       &.syntax--character {
-        color: @red; //@syntax-function;
+        color: @syntax-function;
+      }
+      &.syntax--character.syntax--newline {
+          color: @red;
       }
   }
   .syntax--meta {

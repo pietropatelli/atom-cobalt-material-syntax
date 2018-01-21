@@ -69,7 +69,7 @@ atom-text-editor {  // GENERAL IN EDITOR:
 atom-text-editor[mini] .scroll-view {
     padding-left: 1px; // Mini editor
 }
-//  %%%%%%%%%%%%%%%%%  SYNTAX-SPECFIC:   %%%%%%%%%%%%%%%%%%%%%%%%%
+//  %%%%%%%%%%%%%%%%  SYNTAX-SPECFIC:   %%%%%%%%%%%%%%%%%%%%%%
 .syntax--comment { // Commnts
     //font-style: italic; // Not great for ASCII
     color: @syntax-comment-color;
@@ -83,7 +83,10 @@ atom-text-editor[mini] .scroll-view {
         }
     }
     &.syntax--operator {  // Operators:
-        color: @syntax-operator;
+       color: @syntax-operator;
+          &.syntax--relation, &.syntax--logical, &.syntax--comparison {
+            color: @syntax-logical;
+          }
     }
     &.syntax--other.syntax--special-method {
         color: @blue;
@@ -107,7 +110,7 @@ atom-text-editor[mini] .scroll-view {
         }
 }
 .syntax--constant {  // CONSTANTS:
-    color: @syntax-boolean;
+    color: @syntax-constant;
     &.syntax--character.syntax--escape {
         color: @syntax-escape;
     }
@@ -115,10 +118,10 @@ atom-text-editor[mini] .scroll-view {
         color: @syntax-numeric;
     }
     &.syntax--other.syntax--color {
-        color: @cyan;
+        color: @syntax-constant;
     }
     &.syntax--other.syntax--symbol {
-        color: @green;
+        color: @syntax-numeric;
     }
     &.syntax--language.syntax--null {
         color: @pink;
@@ -251,7 +254,8 @@ atom-text-editor[mini] .scroll-view {
         color: @orange;
     }
     &.syntax--name.syntax--section {
-        color: @blue;
+        color: lighten(@syntax-comment-color,10%);
+        font-weight: bold;
     }
     &.syntax--name.syntax--tag {
         color: @red;
