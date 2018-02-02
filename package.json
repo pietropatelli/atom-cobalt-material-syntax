@@ -12,7 +12,6 @@
     "blue"
   ],
   "repository": "https://github.com/PietroPate/atom-cobalt-material-syntax",
-  "readme": "\n A dark blue theme that takes the classic Cobalt and Material themes and smashes them together. Partially based on Silvestre Herrera's [Atom Material Syntax](https://github.com/silvestreh/atom-material-syntax).\n",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
