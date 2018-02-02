@@ -12,7 +12,7 @@
     "blue"
   ],
   "repository": "https://github.com/PietroPate/atom-cobalt-material-syntax",
-  "readme": "\n A dark theme inspired by the classic Cobalt theme and Silvestre Herrera's [Atom Material Syntax](https://github.com/silvestreh/atom-material-syntax).\n",
+  "readme": "\n A dark blue theme that takes the classic Cobalt theme and Silvestre Herrera's [Atom Material Syntax](https://github.com/silvestreh/atom-material-syntax) and smashes them together.\n",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
