@@ -1,7 +1,7 @@
 {
   "name": "atom-cobalt-material-syntax",
   "theme": "syntax",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A dark blue syntax theme inspired by the classic Cobalt and Material themes",
   "keywords": [
     "syntax",
