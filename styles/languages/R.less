@@ -1,2 +1,14 @@
 .syntax--r {
+    .syntax--keyword {
+      color: @syntax-keyword;
+      &.syntax--operator {
+          color: @syntax-operator;
+          &.syntax--logical, &.syntax--comparison {
+            color: @syntax-operator; // @syntax-logical; // The issue is that >= is not considered as a single comparison operator.
+          }
+      }
+      &.syntax--other,  {
+        color:  @syntax-operator;
+      }
+    }
 }
