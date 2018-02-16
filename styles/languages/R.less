@@ -4,7 +4,7 @@
       &.syntax--operator {
           color: @syntax-operator;
           &.syntax--logical, &.syntax--comparison {
-            color: @syntax-operator; // @syntax-logical; // The issue is that >= is not considered as a single comparison operator.
+            color: @syntax-logical; // @syntax-operator; // There is an issue because >= is not considered as a single comparison operator in some grammars for R, notably language-R. An appropriate grammar is needed for compatibility with @syntax-logical.
           }
       }
       &.syntax--other,  {
