@@ -2,7 +2,7 @@
   .syntax--entity {
       &.syntax--name {
         font-weight: bold;
-        color: @syntax-bold; //@syntax-text-color;
+        color: @syntax-bold;
           &.syntax--function {
               color: @syntax-function;
           }
@@ -11,11 +11,11 @@
           }
       }
       &.syntax--name.syntax--section {
-          color: @red; //lighten(@syntax-comment-color,10%);
+          color: @red;
           font-weight: bold;
       }
     }
-  .syntax--constant {  // CONSTANTS:
+  .syntax--constant {
       color: @syntax-function;
       &.syntax--character {
         color: @syntax-function;
