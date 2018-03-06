@@ -2,9 +2,6 @@
     .syntax--meta {
         &.syntax--function-call {
             color: @syntax-variable;
-            .syntax--punctuation {
-                color: @syntax-punctuation;
-            }
             .syntax--arguments {
                 color: @syntax-variable;
 
@@ -16,7 +13,7 @@
     }
     .syntax--variable {
         &.syntax--self {
-            color: @pink;
+            color: @syntax-variable;
         }
         &.syntax--parameter {
             color: @syntax-variable;
@@ -39,11 +36,6 @@
         }
         &.syntax--other {
           color: @syntax-function;
-        }
-    }
-    .syntax--storage {
-        &.syntax--function {
-          color: @syntax-keyword;
         }
     }
 }
