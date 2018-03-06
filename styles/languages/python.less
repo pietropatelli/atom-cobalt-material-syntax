@@ -1,10 +1,9 @@
 .syntax--python {
     .syntax--meta {
         &.syntax--function-call {
-            color: @syntax-variable;
+            color: @syntax-function;
             .syntax--arguments {
                 color: @syntax-variable;
-
                 &.syntax--punctuation {
                     color: @syntax-punctuation;
                 }
@@ -21,8 +20,18 @@
     }
     .syntax--meta {
         .syntax--punctuation {
+            color: @syntax-punctuation;
             &.syntax--inheritance, &.syntax--section {
                 color: @syntax-punctuation;
+            }
+            &.syntax--definition {
+              color: @syntax-text-color;
+              &.syntax--arguments {
+                color: @syntax-text-color;
+              }
+            }
+            &.syntax--separator {
+              color: @syntax-text-color;
             }
         }
     }
