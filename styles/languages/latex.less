@@ -26,6 +26,9 @@
   }
   .syntax--meta {
       color: @syntax-text-color;
+      &.syntax--function,&.syntax--environment,&.syntax--general {
+        color: @syntax-text-color;
+      }
   }
   .syntax--string {
       color: @syntax-string;
@@ -51,5 +54,21 @@
       &.syntax--variable {
           color: @syntax-classtype;
       }
+  }
+  .syntax--punctuation {
+    @syntax-latex-curlybrackets: @syntax-text-color; //@syntax-function;
+    &.syntax--definition {
+        &.syntax--keyword {
+          color: @syntax-function;
+        }
+        &.syntax--arguments {
+          color: @syntax-latex-curlybrackets;
+        }
+    }
+    &.syntax--section {
+      &.syntax--group {
+        color: @syntax-latex-curlybrackets;
+      }
+    }
   }
 }
