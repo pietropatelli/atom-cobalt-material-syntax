@@ -1,9 +1,9 @@
 @import "colors";
 // General colors
-@syntax-text-color: @very-light-gray;
+@syntax-text-color: fadeout(@very-light-gray,5%);
 @syntax-cursor-color: @cobalt-light-blue;
 @syntax-selection-color: lighten(@syntax-background-color, 10%);
-@syntax-background-color: @cobalt-m-blue;
+@syntax-background-color: @cobalt-b-blue;
 @syntax-comment-color: @cobalt-light-blue;
 // Guide colors
 @syntax-wrap-guide-color: @syntax-comment-color;
@@ -29,16 +29,16 @@
 @syntax-keyword: @purple;
 @syntax-operator: @cyan;
 @syntax-constant: @red;
-@syntax-string: @green;
+@syntax-string: fadeout(@green,5%);
 @syntax-numeric: @strong-orange;
-@syntax-punctuation: @cyan;
+@syntax-punctuation: @syntax-operator;
 // Other syntax colors:
 @syntax-logical: @syntax-constant;
 @syntax-classtype: @orange;
 @syntax-brackets: @syntax-punctuation;
-@syntax-interpolation: @lime;
-@syntax-escape: @lime;
-@syntax-todo-note: @dark-red;
+@syntax-escape: fadeout(@lime,5%);
+@syntax-interpolation: @syntax-escape;
+@syntax-todo-note: lighten(@syntax-comment-color,20%);
 @syntax-boolean: @syntax-constant;
-@syntax-bold: @red;
+@syntax-bold: @syntax-constant;
 @syntax-italic: @syntax-bold;
