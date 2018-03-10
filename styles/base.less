@@ -95,8 +95,11 @@ atom-text-editor[mini] .scroll-view {
         color: @syntax-numeric;
     }
 }
-.syntax--storage {
+.syntax--storage {   
     color: @syntax-classtype;
+      &.syntax--type,&.syntax--class {
+        font-weight: bold;
+        color: @syntax-todo-note;
         &.syntax--note {
           font-weight: normal;
           color: @syntax-todo-note;
@@ -105,9 +108,14 @@ atom-text-editor[mini] .scroll-view {
           font-weight: bold;
           color: @syntax-todo-note;
         }
+        &.syntax--temp {
+          font-weight: bold;
+          color: @syntax-todo-note;
+        }
         &.syntax--function {
           color: @syntax-keyword;
         }
+      }
 }
 .syntax--constant {  // CONSTANTS:
     color: @syntax-constant;
