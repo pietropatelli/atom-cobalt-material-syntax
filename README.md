@@ -1,6 +1,6 @@
 # Atom Cobalt Material Syntax
 
-A dark blue theme that takes the classic Cobalt and Material themes and smashes them together. Inspired by Silvestre Herrera's [Atom Material Syntax](https://github.com/silvestreh/atom-material-syntax).
+A dark blue theme that takes the classic Cobalt and Material themes and smashes them together. Inspired by Silvestre Herrera's [Atom Material Syntax](https://atom.io/themes/atom-material-syntax).
 
 <br/>
 
@@ -8,6 +8,7 @@ A dark blue theme that takes the classic Cobalt and Material themes and smashes 
 
 <br/>
 
+Also check out [Atom Minimal UI](https://atom.io/themes/atom-minimal-ui) for a user interface that works beautifully with most syntax themes.
 
 ### Installation
 
@@ -21,4 +22,4 @@ Or directly in Atom:
 
 
 ### Note
-In some atom grammars for [R](https://cran.r-project.org/), notably [language-r](https://github.com/lee-dohm/language-r),    >= is not recognised as a single comparison operator. The solution is to use [atom-language-r](https://github.com/REditorSupport/atom-language-r).
+In some atom grammars for [R](https://cran.r-project.org/), notably [language-r](https://atom.io/packages/language-r),    >= is not recognised as a single comparison operator. The solution is to use [atom-language-r](https://atom.io/packages/atom-language-r).
