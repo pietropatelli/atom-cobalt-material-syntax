@@ -17,6 +17,15 @@
         &.syntax--parameter {
             color: @syntax-variable;
         }
+        &.syntax--other.syntax--object {
+          color: @syntax-text-color;
+          &.syntax--property {
+            color: @syntax-text-color;
+          }
+        }
+        &.syntax--other.syntax--property {
+            color: @syntax-text-color;
+        }
     }
     .syntax--meta {
         .syntax--punctuation {
@@ -26,6 +35,9 @@
             }
             &.syntax--definition {
               color: @syntax-text-color;
+              &.syntax--string {
+                color: @syntax-string;
+              }
               &.syntax--arguments {
                 color: @syntax-text-color;
               }
@@ -49,5 +61,10 @@
         &.syntax--other {
           color: @syntax-function;
         }
+    }
+    .syntax--constant {
+      &.syntax--other.syntax--placeholder {
+        color: @syntax-escape;
+      }
     }
 }
