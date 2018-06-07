@@ -95,9 +95,11 @@ atom-text-editor[mini] .scroll-view {
         color: @syntax-numeric;
     }
 }
-.syntax--storage {   
+.syntax--storage {
     color: @syntax-classtype;
       &.syntax--type,&.syntax--class {
+        background-color: transparent;   // FIXME
+        border: 1.8px solid @syntax-todo-note;
         font-weight: bold;
         color: @syntax-todo-note;
         &.syntax--note {
