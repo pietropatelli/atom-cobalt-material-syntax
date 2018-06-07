@@ -98,20 +98,22 @@ atom-text-editor[mini] .scroll-view {
 .syntax--storage {
     color: @syntax-classtype;
       &.syntax--type,&.syntax--class {
-        background-color: transparent;   // FIXME
-        border: 1.8px solid @syntax-todo-note;
+        background-color: transparent;   // FIXME TODO TEMP NOTE NB
+        border: 1.5px solid @syntax-todo-note;
         font-weight: bold;
         color: @syntax-todo-note;
         &.syntax--note {
-          font-weight: normal;
+          border: none;
+          color: @syntax-todo-note;
+        }
+        &.syntax--nb {
+          border: none;
           color: @syntax-todo-note;
         }
         &.syntax--todo {
-          font-weight: bold;
           color: @syntax-todo-note;
         }
         &.syntax--temp {
-          font-weight: bold;
           color: @syntax-todo-note;
         }
         &.syntax--function {
