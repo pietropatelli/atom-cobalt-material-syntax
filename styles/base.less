@@ -97,27 +97,30 @@ atom-text-editor[mini] .scroll-view {
 }
 .syntax--storage {
     color: @syntax-classtype;
-      &.syntax--type,&.syntax--class {
-        background-color: transparent;   // FIXME TODO TEMP NOTE NB
-        border: 1.5px solid @syntax-todo-note;
-        font-weight: bold;
-        color: @syntax-todo-note;
-        &.syntax--note {
-          border: none;
+      &.syntax--type {
+        &.syntax--class {
+          background-color: transparent;   // FIXME TODO TEMP NOTE NB
+          border: 1.5px solid @syntax-todo-note;
+          font-weight: bold;
           color: @syntax-todo-note;
-        }
-        &.syntax--nb {
-          border: none;
-          color: @syntax-todo-note;
-        }
-        &.syntax--todo {
-          color: @syntax-todo-note;
-        }
-        &.syntax--temp {
-          color: @syntax-todo-note;
-        }
-        &.syntax--function {
-          color: @syntax-keyword;
+          &.syntax--note {
+            border: none;
+            color: @syntax-todo-note;
+          }
+          &.syntax--nb {
+            border: none;
+            color: @syntax-todo-note;
+          }
+          &.syntax--todo {
+            color: @syntax-todo-note;
+          }
+          &.syntax--temp {
+            color: @syntax-todo-note;
+          }
+          &.syntax--function {
+            color: @syntax-keyword;
+            border: none;
+          }
         }
       }
 }
