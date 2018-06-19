@@ -67,4 +67,15 @@
         color: @syntax-escape;
       }
     }
+    .syntax--storage {
+          &.syntax--type {
+            &.syntax--class {
+              &.syntax--python {
+                border: none;
+                font-weight: normal;
+                color: @syntax-classtype; //@syntax-keyword;
+              }
+          }
+        }
+    }
 }
